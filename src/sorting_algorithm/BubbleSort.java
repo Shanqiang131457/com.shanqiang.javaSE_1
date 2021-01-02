@@ -7,10 +7,10 @@ import util.Swap;
 public class BubbleSort {
     static void sort(int arr[]){
         for(int i=arr.length-1;i>0;i--){
-            maxIndex(arr,i);
+            findMax(arr,i);
         }
     }
-    private static void maxIndex(int arr[] ,int n){
+    private static void findMax(int arr[] ,int n){
         for(int j=0;j<n;j++){
             if(arr[j]>arr[j+1])
                 swap(arr,j,j+1);
