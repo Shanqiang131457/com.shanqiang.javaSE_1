@@ -1,4 +1,7 @@
-package simple_sorting;
+package util;
+
+import intermediate_sorting.ShellSort;
+import simple_sorting.BubbleSort;
 
 import java.util.Arrays;
 import java.util.Random;
@@ -18,7 +21,7 @@ public class DataChecker {
 
     public static void check(){
         int count=0;
-        while(count<=1000){
+        while(count<=10){
             int arr[]=generateRandomArray();  //系统的算法对着这个算
             int arr1[]=new int[arr.length];  //需将元数组拷贝一份，不然使用的是同一组数据，自己算法
             System.arraycopy(arr,0,arr1,0,arr.length);
@@ -26,7 +29,8 @@ public class DataChecker {
             Arrays.sort(arr);
             //SelectionSort.selectSort(arr);
             //SelectionSort.selectSort1(arr);
-            BubbleSort.sort(arr1);
+            // BubbleSort.sort(arr1);
+            ShellSort.sort(arr);
 
             boolean same=true;
             for(int i=0;i<arr1.length;i++){

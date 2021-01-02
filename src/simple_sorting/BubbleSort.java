@@ -18,7 +18,7 @@ import util.PrintArr;
 import util.Swap;
 
 public class BubbleSort {
-    static void sort(int arr[]){
+    public static void sort(int arr[]){
         for(int i=arr.length-1;i>0;i--){
             findMax(arr,i);
         }
