@@ -24,7 +24,9 @@ public class DataChecker {
             System.arraycopy(arr,0,arr1,0,arr.length);
 
             Arrays.sort(arr);
-            SelectionSort.selectSort(arr);
+            //SelectionSort.selectSort(arr);
+            //SelectionSort.selectSort1(arr);
+            BubbleSort.sort(arr1);
 
             boolean same=true;
             for(int i=0;i<arr1.length;i++){
