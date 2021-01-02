@@ -3,7 +3,7 @@ package intermediate_sorting;
 import util.PrintArr;
 import util.Swap;
 
-public class MargeSort {
+public class MergeSort {
     public static void main(String[] args) {
         int arr[]={1,4,6,7,10,3,5,8,9};
         sort(arr);

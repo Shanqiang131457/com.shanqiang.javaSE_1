@@ -1,5 +1,7 @@
 package util;
 
+import intermediate_sorting.MergeSort;
+import intermediate_sorting.MergeSort_1;
 import intermediate_sorting.ShellSort;
 import simple_sorting.BubbleSort;
 
@@ -33,7 +35,8 @@ public class DataChecker {
             //ShellSort.sort(arr1);
             //ShellSort.sort(arr1);
             long start= TimeLog.beforeTime();
-            ShellSort.sort_2(arr1);
+            //ShellSort.sort_2(arr1);
+            MergeSort_1.sort(arr1,0,arr1.length-1);
             long end = TimeLog.afterTime();
             System.out.println(end-start);
             boolean same=true;
