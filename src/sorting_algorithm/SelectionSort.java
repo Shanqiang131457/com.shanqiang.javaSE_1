@@ -1,6 +1,14 @@
 package sorting_algorithm;
-
-import com.sun.scenario.effect.impl.sw.java.JSWColorAdjustPeer;
+/*
+* 选择排序（Select Sort） 是直观的排序，通过确定一个 Key 最大或最小值，
+*       再从带排序的的数中找出最大或最小的交换到对应位置。再选择次之。双重循环时间复杂度为 O(n^2)
+* 算法描述：
+  1，在一个长度为 N 的无序数组中，第一次遍历 n-1 个数找到最小的和第一个数交换。
+ 2，第二次从下一个数开始遍历 n-2 个数，找到最小的数和第二个数交换。
+ 3，重复以上操作直到第 n-1 次遍历最小的数和第 n-1 个数交换，排序完成。
+*
+*
+* */
 
 public class SelectionSort {
     public static void main(String[] args) {
