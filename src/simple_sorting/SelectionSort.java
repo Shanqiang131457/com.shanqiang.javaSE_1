@@ -102,8 +102,8 @@ public class SelectionSort {
 
     public static void selectSort1(int arr[]){  //普通选择排序代码
         for(int i=0;i<arr.length-1;i++){
-            int minPos=i;
-            for(int j=i+1;j<arr.length;j++){
+            int minPos=i; //记录最小值的位置
+            for(int j=i+1;j<arr.length;j++){  //拿下一次数据与最小值进行比较
                 minPos=arr[j]<arr[minPos] ? j:minPos;
             }
             swap(arr,i,minPos);
