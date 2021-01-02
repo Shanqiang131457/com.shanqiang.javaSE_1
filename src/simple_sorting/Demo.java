@@ -1,4 +1,4 @@
-package sorting_algorithm;
+package simple_sorting;
 
 public class Demo {
     public static void main(String[] args) {

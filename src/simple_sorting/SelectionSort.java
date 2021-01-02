@@ -1,4 +1,4 @@
-package sorting_algorithm;
+package simple_sorting;
 /*
 * 选择排序（Select Sort） 是直观的排序，通过确定一个 Key 最大或最小值，
 *       再从带排序的的数中找出最大或最小的交换到对应位置。再选择次之。双重循环时间复杂度为 O(n^2)
