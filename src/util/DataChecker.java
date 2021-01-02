@@ -21,7 +21,7 @@ public class DataChecker {
 
     public static void check(){
         int count=0;
-        while(count<=10){
+        while(count<=1000){
             int arr[]=generateRandomArray();  //系统的算法对着这个算
             int arr1[]=new int[arr.length];  //需将元数组拷贝一份，不然使用的是同一组数据，自己算法
             System.arraycopy(arr,0,arr1,0,arr.length);
@@ -30,8 +30,12 @@ public class DataChecker {
             //SelectionSort.selectSort(arr);
             //SelectionSort.selectSort1(arr);
             // BubbleSort.sort(arr1);
-            ShellSort.sort(arr);
-
+            //ShellSort.sort(arr1);
+            //ShellSort.sort(arr1);
+            long start= TimeLog.beforeTime();
+            ShellSort.sort_2(arr1);
+            long end = TimeLog.afterTime();
+            System.out.println(end-start);
             boolean same=true;
             for(int i=0;i<arr1.length;i++){
                 if(arr[i] != arr1[i])
