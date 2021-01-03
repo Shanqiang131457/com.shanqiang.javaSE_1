@@ -1,5 +1,5 @@
 package advanced_sorting;
-
+//单轴快速排序
 public class QuickSort {
     public static void main(String[] args) {
         int arr[]={7,6,3,2,8,6,1,6,9,10,5,4,6,10};

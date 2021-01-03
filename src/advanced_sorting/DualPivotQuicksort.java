@@ -45,7 +45,7 @@ final class DualPivotQuicksort{
      */
     public static void sort(int[] a, int left, int right) {
 
-        if(right-left < QUICKSORT_THRESHOLD){
+        if(right-left < QUICKSORT_THRESHOLD){  //如果参与排序的数组长度小于这个值，优先使用快速排序而不是归并排序
             sort(a, left, right, true);
             return;
         }
