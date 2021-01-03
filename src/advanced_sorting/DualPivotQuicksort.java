@@ -31,7 +31,7 @@ final class DualPivotQuicksort{
     /**
      * 给指定数组排序
      *
-     * @param 指定的数组
+     * @param '指定的数组'
      */
     public static void sort(int[] a) {
         sort(a, 0, a.length - 1);
@@ -39,9 +39,9 @@ final class DualPivotQuicksort{
 
     /**
      * 给指定数组的指定范围排序
-     * @param 指定的数组
-     * @param 指定范围的第一个元素(包括)
-     * @param 指定范围的最后一个元素(不包括)
+     * @param '指定的数组'
+     * @param '指定范围的第一个元素(包括)'
+     * @param '指定范围的最后一个元素(不包括)'
      */
     public static void sort(int[] a, int left, int right) {
 
@@ -63,7 +63,7 @@ final class DualPivotQuicksort{
             } else if(a[k] > a[k + 1]) { // 降序
                 while(++k <=right && a[k - 1] >= a[k]);
                 //如果是降序的，找出k之后，把数列倒置
-                for (int lo = run[count],hi = k;++lo < --hi) {
+                for (int lo = run[count],hi = k;++lo < --hi;) {
                     int t = a[lo]; a[lo] = a[hi]; a[hi] = t;
                 }
             } else { // 相等
