@@ -7,7 +7,7 @@ public class QuickSort {
         print(arr);
     }
 
-    static void sort(int arr[],int leftBound,int rightBound){
+    public static void sort(int arr[], int leftBound, int rightBound){
         if(leftBound>=rightBound){
             return ;
         }
