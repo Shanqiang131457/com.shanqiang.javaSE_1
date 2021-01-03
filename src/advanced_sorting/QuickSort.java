@@ -2,7 +2,7 @@ package advanced_sorting;
 
 public class QuickSort {
     public static void main(String[] args) {
-        int arr[]={7,6,3,2,8,6,1,6,9,10,5,4,6,0};
+        int arr[]={7,6,3,2,8,6,1,6,9,10,5,4,6,10};
         sort(arr,0,arr.length-1);
         print(arr);
     }
@@ -30,14 +30,14 @@ public class QuickSort {
                 right--;
             }
 
-            //System.out.println("left="+left+"\t right="+right);
+            System.out.println("left="+left+"\t right="+right);
 
             if(left<=right){
                 int temp=arr[left];
                 arr[left]=arr[right];
                 arr[right]=temp;
             }
-            //print(arr);
+            print(arr);
         }
         swap(arr,left,rightBound);
 
