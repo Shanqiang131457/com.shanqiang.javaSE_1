@@ -10,9 +10,9 @@ import java.util.Arrays;
 * */
 public class RadixSort_1 {
     public static void main(String[] args) {
-        //String[] array={"shanqinag","liupinabc","qinyonfen","jiangwenq"};
-        String[] array={"s","a"};
-        String[] strings = radixSort(array);
+        String[] array={"shanqinaga","liupssinabc","qinswqqyonfen","jiaaaangwenq"};
+        //String[] array={"s","a"};
+        String[] strings = radixSort_1(array);
         printArray(strings);
 
 
@@ -38,6 +38,7 @@ public class RadixSort_1 {
           for(int i=0;i<arr.length;i++){
               int index=getCharIndex(arr[i],k);
               countArr[index]++;
+              System.out.print("index:"+index+"\t");
           }
           //统计数组变化
           int sum=0;
