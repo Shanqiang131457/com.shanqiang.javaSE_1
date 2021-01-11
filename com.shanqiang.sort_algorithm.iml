@@ -17,5 +17,6 @@
         <SOURCES />
       </library>
     </orderEntry>
+    <orderEntry type="library" name="Oracle_10g_10.2.0.4_JDBC_ojdbc14" level="application" />
   </component>
 </module>
